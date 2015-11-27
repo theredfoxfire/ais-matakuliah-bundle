@@ -1,0 +1,5 @@
+ais_matakuliah_matakuliah:
+    type: rest
+    prefix: /v1
+    resource: Ais\MatakuliahBundle\Controller\MatakuliahController
+    name_prefix:  api_1_ # naming collision

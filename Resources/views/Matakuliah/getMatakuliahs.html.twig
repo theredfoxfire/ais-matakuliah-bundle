@@ -1,0 +1,18 @@
+{% block content %}
+    <h1 class="title">{{ 'matakuliah.list'|trans({}, 'AisMatakuliahBundle') }}</h1>
+
+    <ul id="matakuliah-list">
+        {% for matakuliah in matakuliahs %}
+            <li>
+                <a href="{{ path('api_1_get_matakuliah', {'id': matakuliah.id}) }}">{{ matakuliah.nama }}</a>
+                {#[<a href="{{ path('api_1_edit_matakuliahs', {'id': matakuliah.id}) }}">{{ 'matakuliah.edit.link'|trans({}, 'AisMatakuliahBundle') }}</a>]#}
+                {#[<a href="{{ path('api_1_remove_matakuliahs', {'id': matakuliah.id}) }}">{{ 'matakuliah.remove.link'|trans({}, 'AisMatakuliahBundle') }}</a>]#}
+            </li>
+        {% else %}
+            <li>{{ 'matakuliah.list.empty'|trans({}, 'AisMatakuliahBundle') }}</li>
+        {% endfor %}
+    </ul>
+    <p>
+        <a href="{{ path('api_1_new_matakuliah') }}">{{ 'matakuliah.new.link'|trans({}, 'AisMatakuliahBundle') }}</a>
+    </p>
+{% endblock %}
