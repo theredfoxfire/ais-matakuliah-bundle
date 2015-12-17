@@ -1,6 +1,7 @@
 Ais\MatakuliahBundle\Entity\Matakuliah:
  type: entity
  table: matakuliah
+ repositoryClass: Ais\MatakuliahBundle\Repository\MatakuliahRepository
  id:
   id: 
    type: integer

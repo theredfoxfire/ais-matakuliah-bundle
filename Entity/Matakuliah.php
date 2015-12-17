@@ -199,4 +199,3 @@ class Matakuliah implements MatakuliahInterface
         return $this->is_delete;
     }
 }
-

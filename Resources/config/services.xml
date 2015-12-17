@@ -16,6 +16,16 @@
             <argument>%ais_matakuliah.matakuliah.class%</argument>
             <argument type="service" id="form.factory"></argument>
         </service>
+        
+        <service id="ais_matakuliah.matakuliah.manager" class="Doctrine\ORM\EntityManager" factory-service="doctrine" factory-method="getManagerForClass">
+			<argument>%ais_matakuliah.matakuliah.class%</argument>
+		</service>
+        
+        <service id="ais_matakuliah.matakuliah.repository" 
+			class="Ais\MatakuliahBundle\Repository\MatakuliahRepository"
+			factory-service="ais_matakuliah.matakuliah.manager" factory-method="getRepository">
+				<argument>%ais_matakuliah.matakuliah.class%</argument>
+		</service>
     </services>
 
 </container>
