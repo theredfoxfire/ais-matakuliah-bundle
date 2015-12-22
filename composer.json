@@ -1,5 +1,5 @@
 {
-    "name" : "Ais/MatakuliahBundle",
+    "name" : "ais/matakuliahbundle",
     "description" : "A bundle filled with Matakuliah entity",
     "type" : "symfony-bundle",
     "authors" : [{
