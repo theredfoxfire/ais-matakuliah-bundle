@@ -23,7 +23,7 @@
         "sensio/distribution-bundle": "~4.0",
         "sensio/framework-extra-bundle": "^3.0.2",
         "incenteev/composer-parameter-handler": "~2.0",
-	"ircmaxell/password-compat"            : "~1.0",
+		"ircmaxell/password-compat"            : "~1.0",
         "leafo/scssphp"                        : "~0.1.5",
         "patchwork/jsqueeze"                   : "~1.0",
         "friendsofsymfony/rest-bundle": "@dev",
@@ -41,10 +41,10 @@
     },
     "autoload" : {
         "psr-0" : {
-            "Ais\\DosenBundle" : ""
+            "Ais\\MatakuliahBundle" : ""
         }
     },
-    "target-dir" : "Ais/DosenBundle",
+    "target-dir" : "Ais/MatakuliahBundle",
     "repositories" : [{
     }],
     "extra" : {
